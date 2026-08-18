@@ -1,2 +1,1 @@
-
 MeasureCord-power, measure, perform.

@@ -682,3 +682,21 @@ footer a {
     font-size: 17px;
   }
    }
+/* MOBILE PRODUCT IMAGE FIX */
+@media (max-width: 768px) {
+  .hero-visual img {
+    width: 100%;
+    height: auto;
+    max-height: 360px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .hero-visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+}

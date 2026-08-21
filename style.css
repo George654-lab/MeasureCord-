@@ -700,3 +700,53 @@ footer a {
     overflow: hidden;
   }
 }
+/* MOBILE HERO STACK FIX */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    display: grid;
+    gap: 30px;
+  }
+
+  .hero-copy {
+    width: 100%;
+  }
+
+  .hero-visual {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    order: 2;
+    padding: 10px 0 20px;
+  }
+
+  .hero-visual img {
+    width: 100%;
+    max-width: 520px;
+    height: auto;
+    max-height: 360px;
+    object-fit: contain;
+  }
+
+  .hero h1 {
+    font-size: 38px;
+    line-height: 1.05;
+  }
+
+  .hero .lead {
+    font-size: 20px;
+    line-height: 1.5;
+  }
+
+  .hero-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}

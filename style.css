@@ -1204,3 +1204,47 @@ footer {
 header {
     border-bottom-color: #0878ff !important;
 }
+/* MEASURECORD LIGHT THEME OVERRIDE */
+
+body {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+header,
+.nav {
+  background: #ffffff !important;
+  color: #111111 !important;
+}
+
+.hero {
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #111111 !important;
+}
+
+.hero::before,
+.hero::after {
+  display: none !important;
+}
+
+section {
+  background-color: #ffffff !important;
+  color: #111111 !important;
+}
+
+.hero h1 {
+  color: #111111 !important;
+}
+
+.hero h1 span {
+  color: #0878ff !important;
+}
+
+.hero p {
+  color: #333333 !important;
+}
+
+.hero .eyebrow {
+  color: #0878ff !important;
+}

@@ -885,3 +885,84 @@ section > * {
 .measurecord-glow {
     animation: measurecordGlow 3s ease-in-out infinite;
 }
+/* =========================================
+   MEASURECORD™ LIGHT BACKGROUND
+   ========================================= */
+
+html,
+body {
+    background: #ffffff !important;
+    color: #111111 !important;
+}
+
+/* Main page sections */
+section,
+main,
+.page,
+.site,
+.container {
+    background-color: #ffffff;
+}
+
+/* Soft gold ambient lighting */
+body {
+    background:
+        radial-gradient(
+            circle at 50% 15%,
+            rgba(255, 215, 0, 0.18) 0%,
+            rgba(255, 215, 0, 0.06) 28%,
+            rgba(255, 255, 255, 0) 55%
+        ),
+        #ffffff !important;
+}
+
+/* Navigation */
+.nav {
+    background: #ffffff !important;
+    color: #111111 !important;
+    border-bottom: 3px solid #1473e6;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+    color: #111111 !important;
+}
+
+/* Regular text */
+p,
+li {
+    color: #333333 !important;
+}
+
+/* Blue MeasureCord accents */
+.accent,
+.highlight {
+    color: #0879e8 !important;
+}
+
+/* Keep licensing section clean */
+#licensing {
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf2 0%,
+            #ffffff 100%
+        ) !important;
+}
+
+/* Contact section */
+#contact {
+    background: #f8f8f8 !important;
+}
+
+/* Cards */
+.product-card,
+.opportunity,
+.feature-card {
+    background: #ffffff !important;
+    color: #111111 !important;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}

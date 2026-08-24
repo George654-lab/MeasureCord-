@@ -1248,3 +1248,49 @@ section {
 .hero .eyebrow {
   color: #0878ff !important;
 }
+/* FORCE MEASURECORD LIGHT MODE */
+
+html,
+body {
+    background: #ffffff !important;
+    color: #111111 !important;
+}
+
+header,
+.nav,
+main,
+section,
+.hero,
+.hero-content,
+.hero-copy {
+    background: #ffffff !important;
+    background-image: none !important;
+    color: #111111 !important;
+}
+
+.hero::before,
+.hero::after {
+    content: none !important;
+    display: none !important;
+}
+
+.hero h1,
+.hero h2,
+.hero p,
+.hero li,
+.section-intro {
+    color: #111111 !important;
+}
+
+.hero h1 span {
+    color: #0878ff !important;
+}
+
+.eyebrow {
+    color: #0878ff !important;
+}
+
+nav a,
+.nav a {
+    color: #111111 !important;
+}

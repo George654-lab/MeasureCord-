@@ -1382,3 +1382,39 @@ footer {
 .hero .checkmark {
   color: #0878ff !important;
 }
+/* MEASURECORD - FORCE COMPLETE WHITE THEME */
+html,
+body,
+main,
+section,
+.hero,
+.hero-content,
+.hero-copy,
+#hero {
+    background: #ffffff !important;
+    background-image: none !important;
+    color: #111111 !important;
+}
+
+.hero h1,
+.hero h2,
+.hero p,
+.hero li,
+.hero .feature,
+.section h1,
+.section h2,
+.section h3,
+.section p {
+    color: #111111 !important;
+}
+
+.hero h1 span,
+.eyebrow {
+    color: #0878ff !important;
+}
+
+header,
+nav {
+    background: #ffffff !important;
+    color: #111111 !important;
+}

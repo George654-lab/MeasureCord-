@@ -1418,3 +1418,76 @@ nav {
     background: #ffffff !important;
     color: #111111 !important;
 }
+/* ===== MEASURECORD FINAL WHITE THEME ===== */
+
+html,
+body {
+    background: #ffffff !important;
+    color: #111111 !important;
+}
+
+body {
+    background-image: none !important;
+}
+
+header,
+.nav,
+main,
+section,
+.hero,
+.hero-content,
+.hero-copy,
+#hero,
+.features,
+.feature,
+.how-it-works,
+.licensing,
+.contact,
+footer {
+    background-color: #ffffff !important;
+    background-image: none !important;
+    color: #111111 !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+span,
+strong,
+label {
+    color: #111111 !important;
+}
+
+.hero h1 span,
+.eyebrow,
+.hero li::marker,
+.hero .check,
+.hero .checkmark {
+    color: #0878ff !important;
+}
+
+.nav a,
+header a {
+    color: #111111 !important;
+}
+
+.hero-buttons a:first-child,
+.hero-buttons .btn:first-child {
+    color: #ffffff !important;
+}
+
+.hero-buttons a:nth-child(2),
+.hero-buttons .secondary,
+.hero-buttons .outline {
+    color: #111111 !important;
+    background: #ffffff !important;
+}
+
+footer {
+    border-top: 1px solid #dddddd !important;
+}

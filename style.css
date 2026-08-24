@@ -823,3 +823,65 @@ section > * {
   text-shadow:
     0 0 12px rgba(255, 190, 0, 0.30);
 }
+/* =========================================
+   MEASURECORD™ GLOW-IN-THE-DARK EFFECT
+   ========================================= */
+
+/* Product image glow */
+.product-image,
+.product-img,
+.measurecord-product,
+.product-render,
+.hero-product img,
+.product-showcase img {
+    filter:
+        drop-shadow(0 0 5px rgba(255, 215, 0, 0.65))
+        drop-shadow(0 0 14px rgba(255, 193, 7, 0.45))
+        drop-shadow(0 0 28px rgba(255, 180, 0, 0.25));
+    transition: filter 0.4s ease;
+}
+
+/* Stronger glow when the user touches/points at the product */
+.product-image:hover,
+.product-img:hover,
+.measurecord-product:hover,
+.product-render:hover,
+.hero-product img:hover,
+.product-showcase img:hover {
+    filter:
+        drop-shadow(0 0 7px rgba(255, 230, 80, 0.85))
+        drop-shadow(0 0 18px rgba(255, 193, 7, 0.65))
+        drop-shadow(0 0 35px rgba(255, 170, 0, 0.40));
+}
+
+/* Glowing measurement markings / accent elements */
+.measure-markings,
+.measurements,
+.measure-scale,
+.glow-markings {
+    color: #ffd700;
+    text-shadow:
+        0 0 5px rgba(255, 215, 0, 0.9),
+        0 0 12px rgba(255, 193, 7, 0.7),
+        0 0 22px rgba(255, 170, 0, 0.45);
+}
+
+/* Optional animated "charged glow" */
+@keyframes measurecordGlow {
+    0%, 100% {
+        filter:
+            drop-shadow(0 0 5px rgba(255, 215, 0, 0.55))
+            drop-shadow(0 0 14px rgba(255, 193, 7, 0.35));
+    }
+
+    50% {
+        filter:
+            drop-shadow(0 0 8px rgba(255, 230, 80, 0.8))
+            drop-shadow(0 0 22px rgba(255, 193, 7, 0.55))
+            drop-shadow(0 0 34px rgba(255, 170, 0, 0.3));
+    }
+}
+
+.measurecord-glow {
+    animation: measurecordGlow 3s ease-in-out infinite;
+}

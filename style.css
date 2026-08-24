@@ -1097,3 +1097,110 @@ li {
 .hero img {
     opacity: 1 !important;
 }
+/* =====================================================
+   MEASURECORD™ — LIGHT WHITE / GOLD WEBSITE THEME
+   ===================================================== */
+
+body {
+    background: #ffffff !important;
+    color: #111111 !important;
+}
+
+/* Header / navigation */
+.nav,
+header {
+    background: #ffffff !important;
+    color: #111111 !important;
+}
+
+/* Main hero */
+.hero {
+    background:
+        radial-gradient(
+            circle at 75% 35%,
+            rgba(255, 210, 40, 0.28) 0%,
+            rgba(255, 210, 40, 0.10) 25%,
+            rgba(255, 255, 255, 0) 55%
+        ),
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #fffdf3 55%,
+            #ffffff 100%
+        ) !important;
+    color: #111111 !important;
+}
+
+/* All major sections */
+section {
+    background: #ffffff !important;
+    color: #111111 !important;
+}
+
+/* Hero text */
+.hero h1,
+.hero h2,
+.hero p {
+    color: #111111 !important;
+}
+
+/* Keep MeasureCord blue emphasis */
+.hero h1 span,
+.hero .blue,
+.blue {
+    color: #0878ff !important;
+}
+
+/* Eyebrow */
+.eyebrow {
+    color: #0878ff !important;
+}
+
+/* Feature text */
+.hero li,
+.features li,
+.feature,
+.section-intro,
+section p {
+    color: #333333 !important;
+}
+
+/* White cards become clean light cards */
+.card,
+.feature-card,
+.opportunity-card {
+    background: #ffffff !important;
+    color: #111111 !important;
+    border-color: #d9e3ef !important;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Yellow/gold MeasureCord lighting effect */
+.hero::before {
+    background:
+        radial-gradient(
+            circle,
+            rgba(255, 205, 0, 0.22) 0%,
+            rgba(255, 205, 0, 0.08) 35%,
+            transparent 70%
+        ) !important;
+}
+
+/* Footer */
+footer {
+    background: #f7f7f7 !important;
+    color: #222222 !important;
+}
+
+/* Keep buttons strong */
+.btn,
+.btn-primary,
+.hero-buttons a {
+    color: #ffffff !important;
+}
+
+/* Blue dividing lines */
+.nav,
+header {
+    border-bottom-color: #0878ff !important;
+}

@@ -1353,3 +1353,32 @@ header a {
 footer {
   border-top: 1px solid #dddddd !important;
 }
+/* ===== MEASURECORD WHITE THEME TEXT FIX ===== */
+
+.hero-buttons a,
+.hero-buttons .btn,
+.hero-buttons a:first-child {
+  color: #ffffff !important;
+}
+
+.hero-buttons a:nth-child(2),
+.hero-buttons a.secondary,
+.hero-buttons a.outline {
+  color: #111111 !important;
+}
+
+.hero li,
+.hero ul li,
+.hero .feature,
+.hero .features li {
+  color: #111111 !important;
+}
+
+.hero li::marker {
+  color: #0878ff !important;
+}
+
+.hero .check,
+.hero .checkmark {
+  color: #0878ff !important;
+}

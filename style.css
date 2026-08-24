@@ -966,3 +966,124 @@ li {
     border: 1px solid rgba(0, 0, 0, 0.10);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
 }
+/* =========================================
+   MEASURECORD™ — LIGHT WEBSITE OVERRIDE
+   FINAL BACKGROUND FIX
+   ========================================= */
+
+html {
+    background: #ffffff !important;
+}
+
+body {
+    background: #ffffff !important;
+    background-image: none !important;
+    color: #111111 !important;
+}
+
+/* FORCE ALL MAJOR SECTIONS LIGHT */
+header,
+main,
+section,
+.hero,
+.hero-section,
+.features,
+.feature-section,
+.product-line,
+.product-platform,
+.licensing,
+.licensing-section,
+.contact,
+.contact-section {
+    background-color: #ffffff !important;
+    background-image: none !important;
+}
+
+/* HERO — white with subtle gold lighting */
+.hero,
+.hero-section {
+    background:
+        radial-gradient(
+            circle at 75% 35%,
+            rgba(255, 210, 50, 0.22) 0%,
+            rgba(255, 225, 100, 0.10) 25%,
+            rgba(255, 255, 255, 0) 55%
+        ),
+        #ffffff !important;
+}
+
+/* NAVIGATION */
+.nav,
+header.nav {
+    background: #ffffff !important;
+    background-image: none !important;
+    color: #111111 !important;
+}
+
+/* HERO TEXT */
+.hero h1,
+.hero-section h1 {
+    color: #111111 !important;
+}
+
+.hero p,
+.hero-section p {
+    color: #444444 !important;
+}
+
+/* BLUE ACCENT TEXT */
+.hero h1 span,
+.hero .accent,
+.hero-section .accent {
+    color: #0879e8 !important;
+}
+
+/* POWER / MEASURE / PERFORM */
+.hero .eyebrow,
+.hero .tagline,
+.hero-section .eyebrow {
+    color: #0879e8 !important;
+}
+
+/* NORMAL BODY TEXT */
+p,
+li {
+    color: #333333 !important;
+}
+
+/* CARDS */
+.product-card,
+.feature-card,
+.opportunity {
+    background: #ffffff !important;
+    color: #111111 !important;
+}
+
+/* LIGHT GOLD LICENSING AREA */
+#licensing {
+    background:
+        linear-gradient(
+            180deg,
+            #fffdf0 0%,
+            #ffffff 100%
+        ) !important;
+}
+
+/* CONTACT */
+#contact {
+    background: #f7f7f7 !important;
+}
+
+/* REMOVE DARK OVERLAYS */
+.hero::before,
+.hero::after,
+.hero-section::before,
+.hero-section::after {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+/* KEEP PRODUCT IMAGE VISIBLE */
+.hero img {
+    opacity: 1 !important;
+}

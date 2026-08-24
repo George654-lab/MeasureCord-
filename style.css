@@ -1294,3 +1294,62 @@ nav a,
 .nav a {
     color: #111111 !important;
 }
+/* ===== MEASURECORD FINAL WHITE THEME ===== */
+
+html,
+body {
+  background: #ffffff !important;
+  background-image: none !important;
+  color: #111111 !important;
+}
+
+body,
+main,
+section,
+.hero,
+.hero-content,
+.hero-copy,
+.section,
+.container,
+header,
+nav,
+footer {
+  background-color: #ffffff !important;
+  background-image: none !important;
+  color: #111111 !important;
+}
+
+.hero::before,
+.hero::after,
+section::before,
+section::after {
+  background: none !important;
+  background-image: none !important;
+  box-shadow: none !important;
+}
+
+.hero h1,
+.hero h2,
+.hero p,
+.hero li,
+.section h1,
+.section h2,
+.section h3,
+.section p {
+  color: #111111 !important;
+}
+
+.hero h1 span,
+.eyebrow {
+  color: #0878ff !important;
+}
+
+nav a,
+.nav a,
+header a {
+  color: #111111 !important;
+}
+
+footer {
+  border-top: 1px solid #dddddd !important;
+}

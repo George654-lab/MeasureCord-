@@ -1491,3 +1491,45 @@ header a {
 footer {
     border-top: 1px solid #dddddd !important;
 }
+/* =========================================
+   MEASURECORD PRODUCT IMAGE GALLERY
+   ========================================= */
+
+.image-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 0 20px;
+}
+
+.image-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: contain;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.14);
+    background: #ffffff;
+}
+
+.image-gallery img:hover {
+    transform: translateY(-4px);
+    transition: transform 0.25s ease;
+}
+
+/* Phone layout */
+@media (max-width: 700px) {
+    .image-gallery {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        margin-top: 28px;
+        padding: 0 14px;
+    }
+
+    .image-gallery img {
+        border-radius: 12px;
+    }
+}

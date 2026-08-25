@@ -1657,3 +1657,25 @@ footer {
     height: 64px;
   }
 }
+/* HOW IT WORKS — TEXT VISIBILITY FIX */
+.how-it-works,
+.how-it-works *,
+.how-it-works h2,
+.how-it-works h3,
+.how-it-works p,
+.how-it-works strong,
+.how-it-works span {
+  color: #ffffff !important;
+}
+
+.how-it-works .step,
+.how-it-works .step-card,
+.how-it-works .how-step {
+  color: #ffffff !important;
+}
+
+.how-it-works .step p,
+.how-it-works .step-card p,
+.how-it-works .how-step p {
+  color: #d9e2f2 !important;
+}

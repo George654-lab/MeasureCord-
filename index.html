@@ -83,16 +83,50 @@
         src="measurecord-hero.png"
         alt="MeasureCord extension cord with integrated measurement markings">
     </div>
-<div class="image-gallery">
-    <img
-        src="measurecord-100ft-glow-markings.png"
-        alt="MeasureCord 100-foot extension cord with glow-in-the-dark measurement markings"
-    >
+<div class="product-gallery" id="gallery">
 
+  <h2>See MeasureCord™ In Action</h2>
+
+  <div class="gallery-main">
     <img
-        src="measurecord-glow-jobsite.png"
-        alt="MeasureCord extension cord with glow-in-the-dark markings on a job site"
+      id="galleryMain"
+      src="measurecord-hero.png"
+      alt="MeasureCord™ measuring extension cord"
     >
+  </div>
+
+  <div class="gallery-controls">
+    <button id="prevBtn" type="button">← Previous</button>
+
+    <div class="gallery-dots" id="galleryDots"></div>
+
+    <button id="nextBtn" type="button">Next →</button>
+  </div>
+
+  <div class="gallery-thumbnails">
+
+    <button class="gallery-thumb active" data-index="0" type="button">
+      <img src="measurecord-hero.png" alt="MeasureCord™ Product">
+      <span>Product</span>
+    </button>
+
+    <button class="gallery-thumb" data-index="1" type="button">
+      <img src="measurecord-100ft-glow-markings.png" alt="MeasureCord™ Glow-in-the-Dark">
+      <span>Glow-in-the-Dark</span>
+    </button>
+
+    <button class="gallery-thumb" data-index="2" type="button">
+      <img src="measurecord-glow-jobsite.png" alt="MeasureCord™ Job-Site Demonstration">
+      <span>Job-Site</span>
+    </button>
+
+    <button class="gallery-thumb" data-index="3" type="button">
+      <img src="measurecord-product.png" alt="MeasureCord™ Product Detail">
+      <span>Product Detail</span>
+    </button>
+
+  </div>
+
 </div>
   </section>
 
@@ -861,6 +895,53 @@ Licensing • Manufacturing • Distribution • Retail Partnerships
 
 </footer>
 
+<script>
+const galleryImages = [
+  "measurecord-hero.png",
+  "measurecord-100ft-glow-markings.png",
+  "measurecord-glow-jobsite.png",
+  "measurecord-product.png"
+];
 
+let currentGalleryIndex = 0;
+
+function showGalleryImage(index) {
+  currentGalleryIndex =
+    (index + galleryImages.length) % galleryImages.length;
+
+  const mainImage = document.querySelector(".hero-image img");
+
+  if (mainImage) {
+    mainImage.src = galleryImages[currentGalleryIndex];
+  }
+
+  document.querySelectorAll(".gallery-thumb").forEach((thumb, i) => {
+    thumb.classList.toggle("active", i === currentGalleryIndex);
+  });
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll(".gallery-thumb").forEach((thumb, index) => {
+    thumb.addEventListener("click", () => {
+      showGalleryImage(index);
+    });
+  });
+
+  const nextButton = document.getElementById("nextBtn");
+  const previousButton = document.getElementById("prevBtn");
+
+  if (nextButton) {
+    nextButton.addEventListener("click", () => {
+      showGalleryImage(currentGalleryIndex + 1);
+    });
+  }
+
+  if (previousButton) {
+    previousButton.addEventListener("click", () => {
+      showGalleryImage(currentGalleryIndex - 1);
+    });
+  }
+});
+</script>
 </body>
 </html>

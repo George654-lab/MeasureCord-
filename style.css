@@ -1685,3 +1685,11 @@ footer {
 .how-it-works .step strong {
   color: #ffffff !important;
 }
+/* FINAL STEP TEXT VISIBILITY FIX */
+.steps .step h3,
+.steps .step p,
+.steps .step strong {
+  color: #ffffff !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}

@@ -1533,3 +1533,127 @@ footer {
         border-radius: 12px;
     }
 }
+/* ================================
+   MEASURECORD GALLERY FINAL FIX
+   ================================ */
+
+/* Hide the old duplicate full-size gallery images */
+.image-gallery {
+  display: none;
+}
+
+/* Main product image */
+.hero-image {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto 18px;
+  text-align: center;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 650px;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+/* Previous / Next buttons */
+#prevBtn,
+#nextBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin: 6px 4px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* Thumbnail row */
+.gallery-thumbnails {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 12px;
+  width: 100%;
+  max-width: 900px;
+  margin: 18px auto 0;
+  overflow-x: auto;
+  padding: 8px 4px 14px;
+}
+
+/* Individual thumbnails */
+.gallery-thumb {
+  flex: 0 0 105px;
+  width: 105px;
+  height: 82px;
+  padding: 4px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: #222;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Thumbnail image */
+.gallery-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Active thumbnail */
+.gallery-thumb.active {
+  border-color: #1769ff;
+}
+
+/* Hide thumbnail text labels */
+.gallery-thumb span {
+  display: none;
+}
+
+/* Gallery dots */
+.gallery-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin: 8px auto;
+}
+
+/* Mobile gallery */
+@media (max-width: 700px) {
+
+  .hero-image {
+    padding: 0 10px;
+  }
+
+  .hero-image img {
+    max-height: 420px;
+  }
+
+  #prevBtn,
+  #nextBtn {
+    display: inline-flex;
+    padding: 9px 14px;
+    font-size: 16px;
+  }
+
+  .gallery-thumbnails {
+    justify-content: flex-start;
+    gap: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .gallery-thumb {
+    flex: 0 0 82px;
+    width: 82px;
+    height: 64px;
+  }
+}

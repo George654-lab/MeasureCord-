@@ -1679,3 +1679,9 @@ footer {
 .how-it-works .how-step p {
   color: #d9e2f2 !important;
 }
+/* HOW IT WORKS — VISIBILITY FIX */
+.how-it-works .step h3,
+.how-it-works .step p,
+.how-it-works .step strong {
+  color: #ffffff !important;
+}

@@ -1790,3 +1790,13 @@ footer {
     padding-top: 0 !important;
   }
 }
+/* Tighten Patent Pending to hero section */
+@media (max-width: 768px) {
+  .patent-badge {
+    margin-bottom: 5px !important;
+  }
+
+  .hero {
+    margin-top: -20px !important;
+  }
+}

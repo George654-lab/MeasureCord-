@@ -1810,3 +1810,25 @@ footer {
     z-index: 9999 !important;
   }
 }
+/* FINAL MEASURECORD PATENT PENDING POSITION FIX */
+.patent-badge {
+  display: block;
+  width: max-content;
+  max-width: calc(100% - 32px);
+  margin: 16px auto 28px;
+  padding: 7px 16px;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 5;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  .patent-badge {
+    margin: 14px auto 32px;
+    padding: 7px 14px;
+    font-size: 12px;
+  }
+}

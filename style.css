@@ -1800,3 +1800,13 @@ footer {
     margin-top: -20px !important;
   }
 }
+/* Accessibility button — mobile positioning fix */
+@media (max-width: 768px) {
+  .accessibility-widget,
+  .accessibility-button,
+  #accessibility-button {
+    bottom: 90px !important;
+    left: 18px !important;
+    z-index: 9999 !important;
+  }
+}

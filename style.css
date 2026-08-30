@@ -1745,3 +1745,38 @@ footer {
         font-size: 11px;
     }
 }
+/* FINAL PATENT PENDING POSITION FIX */
+.patent-badge {
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    transform: none !important;
+
+    display: block !important;
+    width: fit-content !important;
+    max-width: 90%;
+    margin: 6px auto 4px !important;
+
+    padding: 5px 12px !important;
+    border: 1px solid #075fe0 !important;
+    border-radius: 5px;
+    background: #111827;
+    color: #ffffff !important;
+
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .patent-badge {
+        display: block !important;
+        width: fit-content !important;
+        margin: 6px auto 4px !important;
+    }
+}

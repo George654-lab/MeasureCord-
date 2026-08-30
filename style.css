@@ -1780,3 +1780,13 @@ footer {
         margin: 6px auto 4px !important;
     }
 }
+/* MeasureCord mobile spacing refinement */
+@media (max-width: 768px) {
+  .patent-badge {
+    margin-bottom: 35px !important;
+  }
+
+  .hero {
+    padding-top: 0 !important;
+  }
+}

@@ -1710,3 +1710,37 @@ footer {
     text-transform: uppercase;
     text-align: center;
 }
+/* PATENT PENDING — PROFESSIONAL MOBILE-FRIENDLY BADGE */
+.patent-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px auto 0;
+    padding: 6px 12px;
+    border: 1px solid #075fe0;
+    border-radius: 6px;
+    background: #111827;
+    color: #ffffff !important;
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Keep the badge from disrupting the navigation */
+.nav .patent-badge {
+    position: absolute;
+    left: -9999px;
+}
+
+/* Display the badge directly below the header on mobile */
+@media (max-width: 700px) {
+    .patent-badge {
+        position: static;
+        display: flex;
+        width: fit-content;
+        margin: 8px auto 10px;
+    }
+}

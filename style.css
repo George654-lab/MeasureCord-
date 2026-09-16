@@ -1860,3 +1860,20 @@ footer {
     height: auto;
   }
 }
+
+/* FIX HERO BUTTON TEXT */
+.hero-buttons a:first-child {
+  color: #ffffff !important;
+  font-size: 13px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #ffffff !important;
+}
+
+.hero-buttons a:nth-child(2) {
+  color: #111111 !important;
+  font-size: 13px !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  -webkit-text-fill-color: #111111 !important;
+}

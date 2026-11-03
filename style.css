@@ -1896,3 +1896,10 @@ footer {
     overflow: hidden;
   }
 }
+@media (max-width: 768px) {
+  .showcase-image img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}

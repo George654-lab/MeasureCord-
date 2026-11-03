@@ -1877,3 +1877,22 @@ footer {
   opacity: 1 !important;
   -webkit-text-fill-color: #111111 !important;
 }
+/* MEASURECORD MOBILE GALLERY IMAGE FIX */
+@media (max-width: 768px) {
+  .gallery-main img,
+  .gallery-main #galleryMain {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 65vh !important;
+    object-fit: contain !important;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .gallery-main {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow: hidden;
+  }
+}

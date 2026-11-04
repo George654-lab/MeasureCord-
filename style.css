@@ -1948,3 +1948,27 @@ max-height: 35vh !important;
     margin: 0 auto !important;
   }
 }
+
+/* MeasureCord mobile gallery sizing fix */
+@media screen and (max-width: 768px) {
+  .gallery-main {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 10px !important;
+    margin: 0 auto !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .gallery-main img,
+  .gallery-main #galleryMain,
+  #galleryMain {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 45vh !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+  }
+}

@@ -1925,3 +1925,26 @@ footer {
     margin: 0 auto !important;
   }
 }
+/* MEASURECORD MOBILE GALLERY FINAL FIX */
+@media screen and (max-width: 768px) {
+  .gallery-main {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 0 10px !important;
+    box-sizing: border-box !important;
+    overflow: hidden !important;
+  }
+
+  .gallery-main img,
+  .gallery-main #galleryMain,
+  #galleryMain {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    height: 35vh !important;
+max-height: 35vh !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+  }
+}

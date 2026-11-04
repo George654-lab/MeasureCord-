@@ -924,7 +924,7 @@ function showGalleryImage(index) {
   currentGalleryIndex =
     (index + galleryImages.length) % galleryImages.length;
 
-  const mainImage = document.querySelector(".hero-image img");
+  const mainImage = document.getElementById("galleryMain");
 
   if (mainImage) {
     mainImage.src = galleryImages[currentGalleryIndex];

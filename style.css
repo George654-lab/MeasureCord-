@@ -2119,3 +2119,27 @@ margin-right: 0 !important;
         max-width: 100% !important;
     }
 }
+
+/* MEASURECORD GALLERY ORDER FIX */
+@media screen and (max-width: 768px) {
+  .product-gallery {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .product-gallery .gallery-main {
+    order: 1 !important;
+  }
+
+  .product-gallery h2 {
+    order: 2 !important;
+  }
+
+  .product-gallery .gallery-thumbnails {
+    order: 3 !important;
+  }
+
+  .product-gallery .gallery-controls {
+    order: 4 !important;
+  }
+}

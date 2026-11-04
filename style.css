@@ -1972,3 +1972,22 @@ max-height: 35vh !important;
     margin: 0 auto !important;
   }
 }
+/* Smaller MeasureCord gallery on phones */
+@media screen and (max-width: 768px) {
+  .gallery-main {
+    width: 100% !important;
+    max-width: 420px !important;
+    margin: 0 auto !important;
+  }
+
+  .gallery-main img,
+  .gallery-main #galleryMain,
+  #galleryMain {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 24vh !important;
+    object-fit: contain !important;
+    margin: 0 auto !important;
+  }
+}

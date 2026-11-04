@@ -2074,3 +2074,48 @@ margin-right: 0 !important;
     object-position: center !important;
     display: block !important;
 }
+/* FIX MOBILE SCREEN WIDTH */
+@media screen and (max-width: 768px) {
+    html, body {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    * {
+        box-sizing: border-box !important;
+    }
+
+    .hero {
+        display: block !important;
+        width: 100% !important;
+        min-height: auto !important;
+        padding: 45px 20px !important;
+    }
+
+    h1 {
+        font-size: clamp(32px, 8vw, 44px) !important;
+        line-height: 1.15 !important;
+        overflow-wrap: break-word !important;
+    }
+
+    .hero p {
+        font-size: 18px !important;
+        line-height: 1.5 !important;
+    }
+
+    .hero a,
+    .hero button {
+        max-width: 100% !important;
+        width: 100% !important;
+    }
+
+    .hero-image {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    section {
+        max-width: 100% !important;
+    }
+}

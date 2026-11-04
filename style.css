@@ -1991,3 +1991,26 @@ max-height: 35vh !important;
     margin: 0 auto !important;
   }
 }
+
+/* Final phone gallery size adjustment */
+@media screen and (max-width: 768px) {
+  .gallery-main {
+    width: calc(100vw - 40px) !important;
+    max-width: calc(100vw - 40px) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding: 0 !important;
+  }
+
+  .gallery-main img,
+  .gallery-main #galleryMain,
+  #galleryMain {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 22vh !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}

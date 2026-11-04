@@ -2014,3 +2014,25 @@ max-height: 35vh !important;
     margin: 0 auto !important;
   }
 }
+
+/* MeasureCord gallery - improved phone sizing */
+@media screen and (max-width: 768px) {
+  .gallery-main {
+    width: calc(100vw - 32px) !important;
+    max-width: calc(100vw - 32px) !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+  }
+
+  .gallery-main img,
+  .gallery-main #galleryMain,
+  #galleryMain {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 38vh !important;
+    object-fit: contain !important;
+    display: block !important;
+    margin: 0 auto !important;
+  }
+}
